@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="La Flam, pizzeria italienne : des pizzas délicieuses préparées avec passion."
+    />
+    <title>La Flam – MIAM MIAM</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <a
+        href="index.html"
+        class="leftSide"
+        aria-label="La Flam, retour à l'accueil"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-pizza preview-icon"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path d="m12 14-1 1" />
+          <path d="m13.75 18.25-1.25 1.42" />
+          <path d="M17.775 5.654a15.68 15.68 0 0 0-12.121 12.12" />
+          <path d="M18.8 9.3a1 1 0 0 0 2.1 7.7" />
+          <path
+            d="M21.964 20.732a1 1 0 0 1-1.232 1.232l-18-5a1 1 0 0 1-.695-1.232A19.68 19.68 0 0 1 15.732 2.037a1 1 0 0 1 1.232.695z"
+          />
+        </svg>
+        <span class="logo">LA FLAM</span>
+      </a>
+
+      <nav aria-label="Navigation principale">
+        <ul class="rightSide">
+          <li><a href="#pizzas">Nos pizzas</a></li>
+          <li><a href="#contact" class="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="hero-title">
+        <img src="images/bg.webp" alt="" class="hero-bg" />
+        <div class="hero-content">
+          <h1 id="hero-title">Des pizzas italiennes délicieuses</h1>
+          <p>
+            Pâte maison, tomates italiennes et mozzarella fondante : nos pizzas
+            sont cuites au feu de bois pour un goût authentique.
+          </p>
+          <a href="#commande" class="btn-commande">Je commande</a>
+        </div>
+      </section>
+
+      <!-- Commandes de pizzas -->
+      <section id="pizzas" class="commande" aria-label="commande-title">
+        <h2 id="commande-title">Commander</h2>
+        <p class="commande-intro">
+          Choisissez votre pizza, on s'occupe du reste.
+        </p>
+
+        <ul class="pizza-list">
+          <li>
+            <article class="pizza-card">
+              <img
+                src="images/margherita.png"
+                alt="Pizza Margherita avec tomate, mozzarella et basilic"
+                width="398"
+                height="276"
+                loading="lazy"
+              />
+              <h3>Margherita</h3>
+              <p>Sauce tomate, mozzarella, basilic frais et huile d'olive.</p>
+              <footer class="pizza-card-footer">
+                <data value="10.90" class="prix">10,90 €</data>
+                <button type="button" class="btn-ajouter">Ajouter</button>
+              </footer>
+            </article>
+          </li>
+          <li>
+            <article class="pizza-card">
+              <img
+                src="images/pepperoni.png"
+                alt="Pizza Pepperoni recouverte de rondelles de pepperoni"
+                width="600"
+                height="600"
+                loading="lazy"
+              />
+              <h3>Pepperoni</h3>
+              <p>
+                Sauce tomate, mozzarella et généreuses tranches de pepperoni.
+              </p>
+              <footer class="pizza-card-footer">
+                <data value="12.90" class="prix">12,90 €</data>
+                <button type="button" class="btn-ajouter">Ajouter</button>
+              </footer>
+            </article>
+          </li>
+          <li>
+            <article class="pizza-card">
+              <img
+                src="images/quattro-stagioni.png"
+                alt="Pizza Quattro Stagioni avec jambon, poivrons, champignons et artichauts"
+                width="600"
+                height="378"
+                loading="lazy"
+              />
+              <h3>Quattro Stagioni</h3>
+              <p>
+                Jambon, champignons, artichauts et poivrons sur base tomate.
+              </p>
+              <footer class="pizza-card-footer">
+                <data value="13.90" class="prix">13,90 €</data>
+                <button type="button" class="btn-ajouter">Ajouter</button>
+              </footer>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Horaires et emplacement -->
+      <section
+        id="horaires"
+        class="horaire-coord"
+        aria-label="Section horaires"
+      >
+        <h2 id="horaires-title">Horaires &amp; emplacement</h2>
+
+        <div class="details-wrapper">
+          <div class="details-infos">
+            <article class="info-card">
+              <h3>Horaires d'ouverture</h3>
+              <dl class="horaires-list">
+                <div>
+                  <dt>Lundi – Vendredi</dt>
+                  <dd>
+                    <time datetime="12:00">12h00</time> –
+                    <time datetime="23:00">23h00</time>
+                  </dd>
+                </div>
+                <div>
+                  <dt>Samedi – Dimanche</dt>
+                  <dd>
+                    <time datetime="12:00">12h00</time> –
+                    <time datetime="21:00">21h00</time>
+                  </dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="info-card">
+              <h3>Où nous trouver</h3>
+              <address>
+                Parking Jean Rameau<br />
+                40000 Mont-de-Marsan
+              </address>
+            </article>
+          </div>
+
+          <div class="details-map">
+            <iframe
+              title="Carte : Parking Jean Rameau à Mont-de-Marsan"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBVizdQeh3udy11xDc5Ao2YStR2gLc-rfc&amp;q=Parc%20Jean%20rameau%20Mont%20de%20Marsan&amp;maptype=roadmap&amp;zoom=14"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="contact-section"
+        aria-labelledby="contact-title"
+      >
+        <h2 id="contact-title">Contactez-nous</h2>
+
+        <div class="contact-wrapper">
+          <aside class="contact-infos" aria-labelledby="contact-infos-title">
+            <h3 id="contact-infos-title">Nos coordonnées</h3>
+            <address>
+              <ul>
+                <li>
+                  <span class="contact-label">Téléphone</span>
+                  <a href="tel:+33558000000"
+                    >05&nbsp;58&nbsp;00&nbsp;00&nbsp;00</a
+                  >
+                </li>
+                <li>
+                  <span class="contact-label">E-mail</span>
+                  <a href="mailto:contact@laflam.fr">contact@laflam.fr</a>
+                </li>
+              </ul>
+            </address>
+          </aside>
+
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <p class="form-field">
+                <label for="nom">Nom <abbr title="obligatoire">*</abbr></label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  autocomplete="family-name"
+                  required
+                />
+              </p>
+              <p class="form-field">
+                <label for="prenom"
+                  >Prénom <abbr title="obligatoire">*</abbr></label
+                >
+                <input
+                  type="text"
+                  id="prenom"
+                  name="prenom"
+                  autocomplete="given-name"
+                  required
+                />
+              </p>
+            </div>
+
+            <div class="form-row">
+              <p class="form-field">
+                <label for="email"
+                  >E-mail <abbr title="obligatoire">*</abbr></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="jesaispas@exemple.fr"
+                  required
+                />
+              </p>
+              <p class="form-field">
+                <label for="telephone">Téléphone</label>
+                <input
+                  type="tel"
+                  id="telephone"
+                  name="telephone"
+                  autocomplete="tel"
+                  placeholder="06 00 00 00 00"
+                />
+              </p>
+            </div>
+
+            <p class="form-field">
+              <label for="sujet"
+                >Sujet <abbr title="obligatoire">*</abbr></label
+              >
+              <select id="sujet" name="sujet" required>
+                <option value="" disabled selected>Choisissez un sujet</option>
+                <option value="commande">Question sur une commande</option>
+                <option value="evenement">Commande pour un événement</option>
+                <option value="avis">Donner mon avis</option>
+                <option value="autre">Autre</option>
+              </select>
+            </p>
+
+            <p class="form-field">
+              <label for="message"
+                >Message <abbr title="obligatoire">*</abbr></label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                minlength="10"
+                required
+              ></textarea>
+            </p>
+
+            <button type="submit" class="btn-envoyer">
+              Envoyer le message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Section panier en bzs a droite -->
+    <aside class="panier" aria-label="Panier">
+      <button
+        type="button"
+        class="btn-panier"
+        aria-label="Voir le panier, 0 article"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <circle cx="8" cy="21" r="1" />
+          <circle cx="19" cy="21" r="1" />
+          <path
+            d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+          />
+        </svg>
+        <span class="panier-count" aria-hidden="true">0</span>
+      </button>
+    </aside>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <section class="footer-brand" aria-label="À propos de La Flam">
+          <img
+            src="images/footer-logo.png"
+            alt="Logo La Flam Pizzeria"
+            class="footer-logo"
+            width="400"
+            height="400"
+            loading="lazy"
+          />
+          <p>Pizzas tah italiennes cuites au feu de bois à Mont-de-Marsan.</p>
+        </section>
+
+        <nav class="footer-col" aria-labelledby="footer-nav-title">
+          <h2 id="footer-nav-title">Navigation</h2>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#commande">Nos pizzas</a></li>
+            <li><a href="#horaires">Horaires emplacement</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <section class="footer-col" aria-labelledby="footer-horaires-title">
+          <h2 id="footer-horaires-title">Horaires</h2>
+          <dl class="footer-horaires">
+            <div>
+              <dt>Lun – Ven</dt>
+              <dd>
+                <time datetime="12:00">12h00</time> –
+                <time datetime="23:00">23h00</time>
+              </dd>
+            </div>
+            <div>
+              <dt>Sam – Dim</dt>
+              <dd>
+                <time datetime="12:00">12h00</time> –
+                <time datetime="21:00">21h00</time>
+              </dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="footer-col" aria-labelledby="footer-contact-title">
+          <h2 id="footer-contact-title">Contact</h2>
+          <address>
+            <ul>
+              <li>Parking Jean Rameau<br />40000 Mont-de-Marsan</li>
+              <li>
+                <a href="tel:+33558000000">05 58 00 00 00</a>
+              </li>
+              <li><a href="mailto:contact@laflam.fr">contact@laflam.fr</a></li>
+            </ul>
+          </address>
+        </section>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          <small
+            >&copy; <time datetime="2026">2026</time> La Flam. Tous droits
+            réservés.</small
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
